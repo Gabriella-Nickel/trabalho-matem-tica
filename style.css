@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #000; /* Fundo preto conforme o design */
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    max-width: 900px;
+    width: 95%;
+    padding: 40px;
+    gap: 20px;
+}
+
+.content {
+    flex: 1;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.tagline {
+    font-style: italic;
+    color: #ccc;
+    margin-bottom: 40px;
+}
+
+.description p {
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+}
+
+.features {
+    list-style: none;
+    margin-bottom: 40px;
+}
+
+.features li::before {
+    content: "•";
+    color: white;
+    display: inline-block; 
+    width: 1em;
+    margin-left: -1em;
+}
+
+.features li {
+    margin-bottom: 8px;
+    padding-left: 1em;
+}
+
+.contact p {
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+    color: #eee;
+}
+
+.contact a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.logo-area {
+    margin-top: 30px;
+}
+
+.logo-img {
+    width: 130px; /* Ajuste conforme necessário */
+    margin-bottom: 5px;
+}
+
+.brand-name {
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+
+.image-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.remote-img {
+    max-width: 100%;
+    height: auto;
+    /* Adicione um filtro de sombra se quiser destacar do fundo */
+    filter: drop-shadow(0 0 10px rgba(255,255,255,0.1));
+}
+
+/* Responsividade para celulares */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .features {
+        display: inline-block;
+        text-align: left;
+    }
+}
